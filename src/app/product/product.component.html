@@ -1,0 +1,11 @@
+<section id="products" class="container">
+    <div *ngFor="let product of products" class="card m-2">
+      <div class="card-body">
+        <img [src]="product.image" alt="{{ product.name }}" width="100">
+        <h5 class="card-title">{{ product.name }}</h5>
+        <p class="card-text">{{ product.description }}</p>
+        <p class="card-text">{{ product.price }}</p>
+        <a href="#" class="btn btn-primary">Add to Cart</a>
+      </div>
+    </div>
+  </section>
